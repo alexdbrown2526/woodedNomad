@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import logo from "../../../assets/logo.png";
+import logo from "../../../assets/images/logo.png";
 
 const LogoContainer = styled.div`
   ${tw`

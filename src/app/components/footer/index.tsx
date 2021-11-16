@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Logo } from "../logo";
+import backgroundImage from "../../../assets/images/forest.png";
 
 const FooterContainer = styled.div`
   //min-height: 24em;
