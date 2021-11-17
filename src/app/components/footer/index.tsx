@@ -158,7 +158,7 @@ export function Footer() {
         <AboutContainer>
           <Logo />
           <AboutText>
-            Wooden Nomad is a camping equipment rental company located in
+            Wooded Nomad is a camping equipment rental company located in
             Minneapolis, MN that provideshigh quality gear and top rated
             service.
           </AboutText>
