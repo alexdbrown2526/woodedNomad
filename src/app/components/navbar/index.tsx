@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Logo } from "../logo";
+import { NavItems } from "./navitems";
 
 const NavBarContainer = styled.div`
   min-height: 68px;
@@ -25,6 +26,7 @@ export function NavBar() {
       <LogoContainer>
         <Logo />
       </LogoContainer>
+      <NavItems />
     </NavBarContainer>
   );
 }
