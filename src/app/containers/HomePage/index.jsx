@@ -9,43 +9,37 @@ import { ShopGear } from "../../components/shop";
 import { Connect } from "../../components/connect";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
+//save for future styled component
 const PageContainer = styled.div`
   ${tw`
-        flex
-        flex-col
-        w-full
-        h-full
-        items-center
-        overflow-x-hidden
+        
     `}
 `;
 
 export function HomePage() {
   return (
-    <PageContainer>
-      <div class="min-h-screen min-w-screen flex items-center justify-center">
-        <div class="flex flex-col shadow-xl">
-          <div class="py-6 px-14 bg-green-400 rounded-tl-2xl rounded-tr-2xl text-center space-y-8">
-            <h2 class="text-white text-xs uppercase">Join our newsletter</h2>
-            <h4 class="text-white text-center font-bold text-xl">
-              Don't miss out on updates and promotions! Sign up now to recieve
-              the latest
-              <br />
-              updates and most exclusive offers.
-            </h4>
-          </div>
-          <div class="flex flex-col py-6 px-8 space-y-5 bg-white">
-            <input
-              type="text"
-              placeholder="Enter email"
-              class="px-2 py-2 border-2 rounded-md border-gray-200 focus:outline-none focus:ring-1 focus:ring-pink-300 focus:border-transparent"
-            />
-            <button class="w-full py-3 bg-gray-400 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent shadow-lg">
-              Sign me up
-            </button>
-          </div>
+    <div class="min-h-screen min-w-screen flex items-center justify-center">
+      <div class="flex flex-col shadow-xl">
+        <div class="py-6 px-14 bg-green-400 rounded-tl-2xl rounded-tr-2xl text-center space-y-8">
+          <h2 class="text-white text-xl uppercase">Join our newsletter</h2>
+          <h4 class="text-white text-center font-bold text-lg">
+            Don't miss out on updates and promotions! Sign up now to recieve the
+            latest
+            <br />
+            updates and most exclusive offers.
+          </h4>
+        </div>
+        <div class="flex flex-col py-6 px-8 space-y-5 bg-white">
+          <input
+            type="text"
+            placeholder="Enter email"
+            class="px-2 py-2 border-2 rounded-md border-gray-200 focus:outline-none focus:ring-1 focus:ring-pink-300 focus:border-transparent"
+          />
+          <button class="w-full py-3 bg-gray-400 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent shadow-lg">
+            Sign me up
+          </button>
         </div>
       </div>
-    </PageContainer>
+    </div>
   );
 }
