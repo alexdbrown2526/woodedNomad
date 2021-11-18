@@ -26,6 +26,7 @@ function App() {
     <AppContainer>
       <Router>
         <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/howitworks" element={<InformationPage />} />
           <Route path="/shopGear" element={<ShopGear />} />
           <Route path="/connect" element={<Connect />} />
