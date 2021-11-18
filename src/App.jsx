@@ -4,6 +4,13 @@ import "./App.css";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { HomePage } from "./app/containers/HomePage";
+import { Footer } from "./app/components/footer";
+import { InformationPage } from "./app/components/informationPage";
+import { NavBar } from "./app/components/navbar";
+import { MyAccount } from "./app/components/myAccount";
+import { ShopGear } from "./app/components/shop";
+import { Connect } from "./app/components/connect";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const AppContainer = styled.div`
   ${tw`
@@ -17,7 +24,14 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <HomePage />
+      <Router>
+        <Routes>
+          <Route path="/howitworks" element={<InformationPage />} />
+          <Route path="/shopGear" element={<ShopGear />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/myAccount" element={<MyAccount />} />
+        </Routes>
+      </Router>
     </AppContainer>
   );
 }

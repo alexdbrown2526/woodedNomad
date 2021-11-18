@@ -7,7 +7,7 @@ import { NavBar } from "../../components/navbar";
 import { MyAccount } from "../../components/myAccount";
 import { ShopGear } from "../../components/shop";
 import { Connect } from "../../components/connect";
-import { useRoutes, A } from "hookrouter";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const PageContainer = styled.div`
   ${tw`
@@ -20,33 +20,6 @@ const PageContainer = styled.div`
     `}
 `;
 
-const routes = {
-  "/howitworks": () => <InformationPage />,
-  "/shopGear": () => <ShopGear />,
-  "/connect": () => <Connect />,
-  "/myAccount": () => <MyAccount />,
-};
-
 export function HomePage() {
-  const routeResult = useRoutes(routes);
-  return (
-    <PageContainer>
-      <NavBar />
-      <A href="/howitworks">
-        <InformationPage />
-      </A>
-      <A href="/shopGear">
-        <ShopGear />
-      </A>
-      <A href="/connect">
-        <Connect />
-      </A>
-      <A href="/myAccount">
-        <MyAccount />
-      </A>
-      {routeResult}
-
-      <Footer />
-    </PageContainer>
-  );
+  return <PageContainer></PageContainer>;
 }

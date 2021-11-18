@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { Connect } from "../connect";
+import { InformationPage } from "../informationPage";
 import { Logo } from "../logo";
+import { MyAccount } from "../myAccount";
+import { ShopGear } from "../shop";
 import { NavItems } from "./navitems";
+import { HomePage } from "../../containers/HomePage";
 
 const NavBarContainer = styled.div`
   min-height: 68px;
@@ -21,12 +26,5 @@ const NavBarContainer = styled.div`
 const LogoContainer = styled.div``;
 
 export function NavBar() {
-  return (
-    <NavBarContainer>
-      <LogoContainer>
-        <Logo />
-      </LogoContainer>
-      <NavItems />
-    </NavBarContainer>
-  );
+  return <NavBarContainer></NavBarContainer>;
 }
