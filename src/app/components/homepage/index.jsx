@@ -9,16 +9,10 @@ import { ShopGear } from "../../components/shop";
 import { Connect } from "../../components/connect";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-//save for future styled component
-const PageContainer = styled.div`
-  ${tw`
-        
-    `}
-`;
-
 export function HomePage() {
   return (
     <div>
+      <NavBar />
       <h4 class="text-center font-thin text-4xl">Wooded Nomad</h4>
       <div class="min-h-screen min-w-screen flex items-center justify-center">
         <div class="flex flex-col shadow-xl">

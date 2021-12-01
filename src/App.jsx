@@ -3,7 +3,7 @@ import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { HomePage } from "./app/containers/HomePage";
+import { HomePage } from "./app/components/homepage";
 import { Footer } from "./app/components/footer";
 import { InformationPage } from "./app/components/informationPage";
 import { NavBar } from "./app/components/navbar";
