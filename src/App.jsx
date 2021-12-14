@@ -12,28 +12,27 @@ import { ShopGear } from "./app/components/shop";
 import { Connect } from "./app/components/connect";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-const AppContainer = styled.div`
-  ${tw`
-    w-full
-    h-full
-    flex
-    flex-col
-`}
-`;
+// const AppContainer = styled.div`
+//   ${tw`
+//     w-full
+//     h-full
+//     flex
+//     flex-col
+// `}
+// `;
 
 function App() {
   return (
-    <AppContainer>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/howitworks" element={<InformationPage />} />
-          <Route path="/shopGear" element={<ShopGear />} />
-          <Route path="/connect" element={<Connect />} />
-          <Route path="/myAccount" element={<MyAccount />} />
-        </Routes>
-      </Router>
-    </AppContainer>
+    <Router>
+      <NavBar></NavBar>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/howitworks" element={<InformationPage />} />
+        <Route path="/shopGear" element={<ShopGear />} />
+        <Route path="/connect" element={<Connect />} />
+        <Route path="/myAccount" element={<MyAccount />} />
+      </Routes>
+    </Router>
   );
 }
 

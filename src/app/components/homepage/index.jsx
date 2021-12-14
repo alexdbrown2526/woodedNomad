@@ -12,7 +12,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 export function HomePage() {
   return (
     <div>
-      <NavBar />
       <h4 className="text-center font-thin text-4xl">Wooded Nomad</h4>
       <div className="min-h-screen min-w-screen flex items-center justify-center">
         <div className="flex flex-col shadow-xl">
