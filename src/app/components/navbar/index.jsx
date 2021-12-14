@@ -8,6 +8,13 @@ import { MyAccount } from "../myAccount";
 import { ShopGear } from "../shop";
 import { NavItems } from "./navitems";
 import { HomePage } from "../homepage";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
 
 export function NavBar() {
   return (
