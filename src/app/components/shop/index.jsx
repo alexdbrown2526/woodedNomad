@@ -1,7 +1,12 @@
 import React from "react";
 import { StyledComponent } from "styled-components";
-import { shopSidebar } from "../shopSidebar";
+import { ShopSidebar } from "../../components/shopSidebar";
 
 export function ShopGear() {
-  return <shopSidebar />;
+  return (
+    <div>
+      asdfasdf
+      <ShopSidebar />
+    </div>
+  );
 }

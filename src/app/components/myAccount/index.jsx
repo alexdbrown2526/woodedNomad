@@ -1,4 +1,5 @@
 import React from "react";
+import { shopSidebar } from "../shopSidebar";
 
 export function MyAccount() {
   return (
