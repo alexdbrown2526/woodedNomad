@@ -23,16 +23,19 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <NavBar></NavBar>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/howitworks" element={<InformationPage />} />
-        <Route path="/shopGear" element={<ShopGear />} />
-        <Route path="/connect" element={<Connect />} />
-        <Route path="/myAccount" element={<MyAccount />} />
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/howitworks" element={<InformationPage />} />
+          <Route path="/shopGear" element={<ShopGear />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/myAccount" element={<MyAccount />} />
+        </Routes>
+      </Router>
+      <Footer />
+    </div>
   );
 }
 
