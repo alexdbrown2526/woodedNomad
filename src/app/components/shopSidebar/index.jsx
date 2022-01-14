@@ -24,7 +24,7 @@ export function ShopSidebar() {
             </li>
 
             <li class="rounded-sm">
-              <span>Cookware</span>
+              <span></span>
             </li>
           </ul>
         </div>
